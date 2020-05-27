@@ -1,0 +1,36 @@
+﻿<Window x:Class="HanoiTower.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HanoiTower"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Column="0" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Column="1" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Column="2" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+
+        <DockPanel Grid.Column="0" LastChildFill="False" Background="#00B4ACAC" MouseUp="tossdiskkk_GotFocus">
+            <Rectangle Width="200" Height="25" Fill="#FFCB00CB" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="180" Height="25" Fill="#FF000CFF" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="160" Height="25" Fill="#FF00FFF3" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="130" Height="25" Fill="#FF23FF00" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="110" Height="25" Fill="#FFE8FF00" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="90" Height="25" Fill="#FFFF7400" DockPanel.Dock="Bottom" Stroke="Black"/>
+            <Rectangle Width="60" Height="25" Fill="Red" DockPanel.Dock="Bottom" Stroke="Black"/>
+        </DockPanel>
+
+        <DockPanel Grid.Column="1" LastChildFill="False" MouseUp="tossdiskkk_GotFocus" Background="Transparent"/>
+
+        <DockPanel Grid.Column="2" LastChildFill="False" MouseUp="tossdiskkk_GotFocus" Background="Transparent"/>
+        <Image Grid.ColumnSpan="3" Margin="0,0,-1760,-1006" Stretch="Fill" Source="pack://siteoforigin:,,,/Image1.png"/>
+
+    </Grid>
+</Window>
